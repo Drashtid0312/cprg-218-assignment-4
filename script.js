@@ -7,7 +7,16 @@ function fetchJoke(category)
     const jokeTitle = document.getElementById("joketitle");
     const jokeText = document.getElementById("joketext")
 
+    if (data.type == "twopart")
+    {
+        jokeText.innerHTML = `${data.setup} ... ${data.delivery}`;
+    }
+    else
+    {
+        jokeText.innerHTML = data.joke;
+    }
 
+    
     })    
 }
 
