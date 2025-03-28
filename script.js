@@ -16,7 +16,18 @@ function fetchJoke(category)
         jokeText.innerHTML = data.joke;
     }
 
-    
+    if (category == "Any")
+    {
+        jokeTitle.innerHTML = "Joke Of The Day";
+    }
+    else if (category == "Pun")
+    {
+        jokeTitle.innerHTML = "A Random Pun";
+    }
+    else
+    {
+        jokeTitle.innerHTML = `A Random ${category} Joke`;
+    }
     })    
 }
 
