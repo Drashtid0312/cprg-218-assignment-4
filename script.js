@@ -4,6 +4,9 @@ function fetchJoke(category)
     .then(response => response.json())
     .then(data => {
 
+    const jokeTitle = document.getElementById("joketitle");
+    const jokeText = document.getElementById("joketext")
+
 
     })    
 }
