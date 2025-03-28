@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joke of the day</title>
+    <script src="./script.js"></script>
 </head>
 <body>
-    <h1>Joke Of The day</h1>
-    <p>Joke</p>
+    <h1 id="joketitle">Joke Of The Day</h1>
+    <p id="joketext">Joke</p>
     <p>Generate A New Random Joke By Category</p>
     
-    <button>Random Joke</button>
-    <button>Programming</button>
-    <button>Misc</button>
-    <button>Pun</button>
-    <button>Spooky</button>
-    <button>Christmas</button>
+    <button onclick="fetchJoke('Any')">Random Joke</button>
+    <button onclick="fetchJoke('Programming')">Programming</button>
+    <button onclick="fetchJoke('Misc')">Misc</button>
+    <button onclick="fetchJoke('Pun')">Pun</button>
+    <button onclick="fetchJoke('Spooky')">Spooky</button>
+    <button onclick="fetchJoke('Christmas')">Christmas</button>
 </body>
 </html>
